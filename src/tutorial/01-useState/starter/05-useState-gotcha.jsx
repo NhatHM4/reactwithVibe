@@ -3,12 +3,7 @@ import { useState } from "react";
 const UseStateGotcha = () => {
   const [value, setValue] = useState(0)
   const handleIncrease =()=>{
-    setValue((value)=>{
-      value = value+1
-      console.log(value)
-     return  value
-     
-    })
+
 
    
     // setTimeout(() => {

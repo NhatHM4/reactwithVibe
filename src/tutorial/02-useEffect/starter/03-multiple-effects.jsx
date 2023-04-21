@@ -11,6 +11,15 @@ const MultipleEffects = () => {
   // useEffect(() => {
   //   console.log('hello from second useEffect');
   // }, []);
+
+  useEffect(()=>{
+    console.log("value + 1 ")
+  }, [value])
+
+  useEffect(()=>{
+    console.log("valueSecond + 1 ")
+  }, [secondValue])
+
   return (
     <div>
       <h1>value : {value}</h1>
