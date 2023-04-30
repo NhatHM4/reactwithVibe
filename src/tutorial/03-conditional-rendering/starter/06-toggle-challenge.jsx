@@ -1,5 +1,20 @@
+import { useState } from "react";
+
 const ToggleChallenge = () => {
-  return <h2>toggle challenge</h2>;
+  const [toggle, setToggle] = useState(false)
+  return <>
+  <button onClick={()=>{setToggle(!toggle)}}>run alert</button>
+  <Component toggle={toggle}/>
+  </>;
 };
 
 export default ToggleChallenge;
+
+const Component = ({toggle})=>{
+  console.log(toggle)
+  return <div>
+    {toggle && <div>
+        Hien thi thanh cong
+      </div>}
+  </div>
+}
