@@ -1,12 +1,10 @@
-import Starter from './tutorial/07-useRef/starter/01-useRef-basics';
-import Final from './tutorial/06-forms/final/05-form-data';
-import Test from './tutorial/07-useRef/starter/Test';
+import Final from './tutorial/09-context-api/final/context/Navbar';
+import Starter from './tutorial/09-context-api/starter/context/Navbar';
+
 function App() {
   return (
     <div className='container'>
-      {/* <Starter/> */}
-      {/* <Final /> */}
-        <Test/>
+      <Starter />
     </div>
   );
 }
