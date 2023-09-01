@@ -1,4 +1,8 @@
-const UserContainer = ({ user, logout }) => {
+import { useContext } from "react";
+import { UserContext } from "./UserContext";
+
+const UserContainer = () => {
+  const {user, logout} = useContext(UserContext)
   return (
     <div className="user-container">
       {user ? (
