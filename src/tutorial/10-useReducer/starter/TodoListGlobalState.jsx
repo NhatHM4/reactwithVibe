@@ -28,7 +28,7 @@ const TodoList = () => {
           } else {
             setIsUpdate(false)
             dispatch({ type: UPDATE, payload: {value : todo.todoInput, id: refIndex.current} });
-            dispatch({ type: CHANGE_INPUT, payload: '' });
+            dispatch({ type: CHANGE_INPUT, payload: ' ' });
             refInput.current.focus()
           }
           
